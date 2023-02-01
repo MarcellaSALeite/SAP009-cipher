@@ -21,7 +21,6 @@ button2.addEventListener("click", descriptografar);
 
 
 
-
 function descriptografar(){
     console.log("Olá")
 }
