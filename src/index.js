@@ -1,9 +1,27 @@
-import cipher from './cipher.js';
+//import cipher from './cipher.js';
 
-console.log(cipher);
+//console.log(cipher);
 
-var button1 = document.querySelector("#submit1");
-button1.addEventListener("click",verifica1)
+// criar botões
+// fazer os botoes funcionar
+// usar addEventListener
 
-var button2 = document.querySelector("#submit1");
-button2.addEventListener("click",verifica2)
+const button= document.querySelector("#criptografar");
+
+button.addEventListener("click", criptografar);
+
+function criptografar(){
+    // const textarea1 = document.querySelector("textarea1").innerHTML
+   console.log("oi")
+ }
+
+const button2= document.querySelector("#descriptografar");
+
+button2.addEventListener("click", descriptografar);
+
+
+
+
+function descriptografar(){
+    console.log("Olá")
+}

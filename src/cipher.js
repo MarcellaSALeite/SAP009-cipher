@@ -1,6 +1,11 @@
-const cipher = {
-const botao = document.getElementById("submit1")
-boatao.addEventListener("click")
+
+
+
+
+const cipher ={    // encoded: function enconded(offset, string){
+//   if (typeof offset === null || typof string !== string) {
+//   } // }
+}
 
 
 export default cipher;

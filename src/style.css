@@ -18,7 +18,7 @@ html, body {
         
     
          
-    .container-btn button{
+   .id{
                 width: 200px;
                 height: 50px;
                 margin:8px;
@@ -27,6 +27,17 @@ html, body {
                 border-radius:50%;
 }
 
-    h1 {background-color:#ccd5ae ;
+    h1 { 
+        background-color:#ccd5ae ;
     border:10px solid #e9edc9;
     padding: 5px} 
+
+    footer {
+    position: absolute;
+    background-color: #ccd5ae;
+    color: #black;
+    width: 100%;
+    height: 50px;    
+    text-align: center;
+    line-height: 50px;   
+     }
