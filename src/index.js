@@ -1,26 +1,24 @@
-//import cipher from './cipher.js';
+import cipher from './cipher.js';
 
-//console.log(cipher);
+const textarea1 = document.querySelector("#textarea1");
+const textarea2 = document.querySelector("#textarea2");
+const deslocamento = document.querySelector("#deslocamento");
+const button = document.querySelector("#criptografar");
 
-// criar botões
-// fazer os botoes funcionar
-// usar addEventListener
-
-const button= document.querySelector("#criptografar");
 
 button.addEventListener("click", criptografar);
 
-function criptografar(){
-    // const textarea1 = document.querySelector("textarea1").innerHTML
-   console.log("oi")
- }
+function criptografar() { const msgCriptografada = textarea1.value.toUpperCase();
+ const offset = parseInt(deslocamento.value);
+ textarea2.value = cipher.encode(msgCriptografada, offset);
+}
 
-const button2= document.querySelector("#descriptografar");
+const button2 = document.querySelector("#descriptografar");
 
 button2.addEventListener("click", descriptografar);
 
-
-
-function descriptografar(){
-    console.log("Olá")
+function descriptografar() {
+    const msgDescriptografada = textarea1.value.toUpperCase();
+    const offset = parseInt(deslocamento.value);
+    textarea2.value = cipher.decode(msgDescriptografada, offset);
 }
